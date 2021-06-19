@@ -5,31 +5,30 @@ body{
     background-color: black;
     opacity: 0.9;
     text-align: center;
-    /*display: flex;
-    justify-content: center;*/
     overflow-x: hidden;
 }
 
 a { color: inherit; } 
 
+/*Nav*/
 nav{
+    top: 0;
+    left:0;
     height: 69px;
     width: 100%;
-    border-bottom: 1px solid seashell;
+    z-index: 1;
+    
     position: fixed;
     display:flex;
     justify-content:space-between;
+
+    border-bottom: 1px solid seashell;
     background-color: black;
-    z-index: 1;
-    top: 0;
-    left:0;
-    
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
-    justify-content:space-around;
 }
 
 nav li{
@@ -42,25 +41,38 @@ nav img{
     margin: auto 0 auto 10px;
 }
 
+/*Header*/
 header{
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     height: 700px;
     width: 1200px;
-    position: relative;
-    top: 69px;
+    padding-top: 69px;
+
     margin: 0 auto;
     margin-bottom: 99px;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
 }
 
 header div{
     background-color: black;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+h2,h4{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Futured Tea*/
 #futuredtea{
     width: 1000px;
     display: inline-flex;
