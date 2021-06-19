@@ -14,7 +14,7 @@ a { color: inherit; }
 nav{
     top: 0;
     left:0;
-    height: 69px;
+    max-height: 69px;
     width: 100%;
     z-index: 1;
     
@@ -46,73 +46,76 @@ header{
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     height: 700px;
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 69px;
-
     margin: 0 auto;
     margin-bottom: 99px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 header div{
+
     background-color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-h2,h4{
-    display: flex;
-    flex-wrap: wrap;
-}
-/*Futured Tea*/
-#futuredtea{
-    width: 1000px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: center;
     
 }
+
+
+/*Futured Tea*/
+#futuredtea{
+    max-width: 1000px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #futuredtea img{
-    height: 200px;
-    width: 300px;
+    
+    max-height: 200px;
+    max-width: 300px;
     margin-bottom: 10px;
 }
 
 /* Locations */
 #locations{
-    width: 1000px;
-    margin: 0 auto;
-    
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+
 }
 #locations h2{
     width: 100%;
 }
-#main{
-    flex-wrap: wrap;
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
+.loc-div{
+    display: flex;
     flex-direction: row;
-    height: 500px;
-    flex-shrink: 1;
+    justify-content: center;
 }
-
-#main div{
+.loc-div div{
     background-color: black;
-    margin: 15px 40px 0 0;
-    width: 300px;
+    opacity: 1;
+    max-width: 300px;
+    margin: 15px 40px 0 0 ;
 }
-
+#oakdale{
+    margin: 15px 0 0 0 ;
+}
+#locations div h3,#locations div h4{
+    margin: 15px;
+}
 
 /* Footer */ 
 footer{
