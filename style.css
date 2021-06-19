@@ -1,0 +1,120 @@
+body{
+    font-family: Helvetica;
+    font-size: 22px;
+    color:seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    /*display: flex;
+    justify-content: center;*/
+    overflow-x: hidden;
+}
+
+a { color: inherit; } 
+
+nav{
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    display:flex;
+    justify-content:space-between;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    left:0;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+nav li{
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+nav img{
+    height: 50px;
+    margin: auto 0 auto 10px;
+}
+
+header{
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    position: relative;
+    top: 69px;
+    margin: 0 auto;
+    margin-bottom: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div{
+    background-color: black;
+    width: 100%;
+}
+
+#futuredtea{
+    width: 1000px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    
+}
+#futuredtea img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Locations */
+#locations{
+    width: 1000px;
+    margin: 0 auto;
+    
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+}
+#locations h2{
+    width: 100%;
+}
+#main{
+    flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+    flex-shrink: 1;
+}
+
+#main div{
+    background-color: black;
+    margin: 15px 40px 0 0;
+    width: 300px;
+}
+
+
+/* Footer */ 
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+h5{
+    margin: auto;
+}
+
+#left{
+    margin-left: 20px;
+}
+
